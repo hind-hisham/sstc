@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>About Us</title>
+</head>
+<body>
+     <!-- ===========================start navbare header ================== -->
+
+     <header>
+
+        <a href="#" class="logo"><img src="../img/Logo.png" alt="SSCT"></a>
+
+        <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop"><img src="../img/exit.svg" alt="exit"></li>
+            <li><a href="index.html" data-value="home" id="01">Home</a></li>
+            <li><a href="services.html" data-value="services" id="02">Services</a></li>
+            <li><a href="courses.html" data-value="courses" id="03">Courses</a></li>
+            <li class="active"><a href="about-us.html" id="04">About Us</a></li>
+            <li><a href="contact-us.html" data-value="contact-us" id="05">Contact Us</a></li>
+
+        </ul>
+        <div>
+            <div class="login" id="06"><a href="login.html">logIn </a></div>
+
+            <div class="flag" id="english"><img src="../img/us-flag.png" alt=""></div>
+            <div class="flag" id="arabic"><img src="../img/su-flag.png" alt=""></div>
+            <a href="#" class="hide-desktop menu">
+                <img src="../img/ham-w.png" alt="toggle menu" id="menu">
+            </a>
+        </div>
+    </header>
+    <!-- ===========================end navbare header ================== -->
+
+    <div class="container-a">
+        <div class="content-a cont1">
+            <h2 id="1">Alsharg Center</h2>
+            <p id="1-1">As you work through describing parts of the program, hand out a copy of each pertinent learning sheet to each participant as you come to it. Provide a think-aloud model of (either individually or in pairs) respond to the next item on the sheet As you work through describing parts of the program, hand out a copy of each pertinent </p>
+        </div>
+
+        <div class="content-a cont2">
+            <h2 id="2">Vision</h2>
+            <p id="2-1">Alsharg Center vision is to position our self as a leading software provider in Sudan and to be the best option for both (Government/private) sectors as well as we seek to improve our clients business and increase their profits, through providing them with well designed, efficient, reliable, scalable technical solutions. </p>
+        </div>
+
+        <div class="content-a cont3">
+            <h2 id="3">Our Mission</h2>
+            <p id="3-1">We as center are dedicated to provide our clients and partners from different sectors with high quality information technology solutions that are fast, reliable and cost effective, to increase the efficiency of these enterprise systems and provide them with well designed equipment to compete and gain more profits, and we seek to create long term effective benefit relationship </p>
+        </div>
+
+        <div class="content-a cont4">
+            <h2 id="4">Future vision</h2>
+            <p id="4-1">As you work through describing parts of the program, hand out a copy of each pertinent learning sheet to each participant as you come to it. Provide a think-aloud model of (either individually or in pairs) respond to the next item on the sheet As you work through describing parts of the program, hand out a copy of each pertinent </p>
+        </div>
+    <div class="video-cont">
+        <video src="../img/vedio/11.mp4" autoplay muted loop class="vid1"></video>
+        <video src="../img/vedio/22.mp4" autoplay muted loop class="vid2"></video>
+        <video src="../img/vedio/33.mp4" autoplay muted loop class="vid3"></video>
+        <video src="../img/vedio/55.mp4" autoplay muted loop class="vid4"></video>
+
+    </div>
+
+    <div class="controls">
+        <div class="dots dot1 active"></div>
+        <div class="dots dot2"></div>
+        <div class="dots dot3"></div>
+        <div class="dots dot4"></div>
+    </div><!--ccotrol-->
+
+    
+</div>
+<script src="../js/jQueryv3.5.1.js"></script>
+<script src="../js/language-abut-us.js"></script>
+<script>
+    //mobile nav chinges JS
+    var menu= document.getElementById('menu');
+    var nav= document.getElementById('nav');
+    var exit= document.getElementById('exit');
+    menu.addEventListener('click',function(e){
+      nav.classList.toggle('hide-mobile');
+      e.preventDefault();
+    });
+    exit.addEventListener('click',function(e){
+      nav.classList.add('hide-mobile');
+      e.preventDefault();
+    });
+        
+</script>
+<script>
+    $(document).ready(function(){
+          //add the active class
+
+    $('header ul li a').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+        //the moveing control bottons code
+    $('.dot1').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.cont1').css('display','block');
+        $('.cont2').css('display','none');
+        $('.cont3').css('display','none');
+        $('.cont4').css('display','none');
+       //the content control
+        $('.vid1').css('display','block');
+        $('.vid2').css('display','none');
+        $('.vid3').css('display','none');
+        $('.vid4').css('display','none');
+    });
+    $('.dot2').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.cont1').css('display','none');
+        $('.cont2').css('display','block');
+        $('.cont3').css('display','none');
+        $('.cont4').css('display','none');
+       //the content control
+        $('.vid1').css('display','none');
+        $('.vid2').css('display','block');
+        $('.vid3').css('display','none');
+        $('.vid4').css('display','none');
+    });
+    $('.dot3').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+
+        $('.cont1').css('display','none');
+        $('.cont2').css('display','none');
+        $('.cont3').css('display','block');
+        $('.cont4').css('display','none');
+       //the content control
+        $('.vid1').css('display','none');
+        $('.vid2').css('display','none');
+        $('.vid3').css('display','block');
+        $('.vid4').css('display','none');
+    });
+    $('.dot4').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.cont1').css('display','none');
+        $('.cont2').css('display','none');
+        $('.cont3').css('display','none');
+        $('.cont4').css('display','block');
+       //the content control
+        $('.vid1').css('display','none');
+        $('.vid2').css('display','none');
+        $('.vid3').css('display','none');
+        $('.vid4').css('display','block');
+    });
+});
+</script>
+</body>
+</html>

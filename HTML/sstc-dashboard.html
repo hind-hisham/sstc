@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-apple"></span>
+                        <span class="title">sstc</span>
+                    </a>
+                </li>
+                <li class="hovered">
+                    <a href="#">
+                        <span class="icon fa fa-home"></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-users"></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-commenting"></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-lock"></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-hourglass-3"></span>
+                        <span class="title">Sing Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--main-->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                   <i class="fa fa-laptop"></i>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="search here">
+                        <i class="fa fa-search"></i>
+                    </label>  
+                 </div>
+                 <div class="user">
+                     <img src="img/post-4.png" alt="">
+                 </div>
+            </div>
+
+            <!--cards-->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="cardNumber">1,587</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="cicon">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardNumber">177</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="cicon">
+                        <i class="fa fa-battery"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardNumber">158</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="cicon">
+                        <i class="fa fa-commenting-o"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardNumber">$25,8</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+                    <div class="cicon">
+                        <i class="fa fa-money"></i>
+                    </div>
+                </div>
+
+            </div>
+              <!--charts-->
+<div class="graphBox">
+    <div class="box">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="box">
+        <canvas id="earning"></canvas>
+
+    </div>
+</div>
+             <!--order details list-->
+             <div class="details">
+                 <div class="recentO">
+                     <div class="oheader">
+                         <h2>Recent Order</h2>
+                         <a href="#" class="btn">Viwe All</a>
+                     </div>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <td>Name</td>
+                                 <td>Price</td>
+                                 <td>Payment</td>
+                                 <td>Status</td>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>Star Refrigerator</td>
+                                 <td>$1200</td>
+                                 <td>Paid</td>
+                                 <td><span class="status delivred">Delivred</span></td>
+                             </tr>
+                             <tr>
+                                <td>mohamed osman</td>
+                                <td>$700</td>
+                                <td>Paid</td>
+                                <td><span class="status delivred">no Delivre</span></td>
+                            </tr>
+                            <tr>
+                                <td>enas mostafa</td>
+                                <td>$270</td>
+                                <td>Paid</td>
+                                <td><span class="status delivred">Delivred</span></td>
+                            </tr>
+                            <tr>
+                                <td>padr barker</td>
+                                <td>$1000</td>
+                                <td>Paid</td>
+                                <td><span class="status delivred">Delivred</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivred">Delivred</span></td>
+                            </tr>
+                            <tr>
+                               <td>mohamed osman</td>
+                               <td>$700</td>
+                               <td>Paid</td>
+                               <td><span class="status delivred">no Delivre</span></td>
+                           </tr>
+                           <tr>
+                               <td>enas mostafa</td>
+                               <td>$270</td>
+                               <td>Paid</td>
+                               <td><span class="status delivred">Delivred</span></td>
+                           </tr>
+                           <tr>
+                               <td>padr barker</td>
+                               <td>$1000</td>
+                               <td>Paid</td>
+                               <td><span class="status delivred">Delivred</span></td>
+                           </tr>
+                           <tr>
+                            <td>Star Refrigerator</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="status delivred">Delivred</span></td>
+                        </tr>
+                        <tr>
+                           <td>mohamed osman</td>
+                           <td>$700</td>
+                           <td>Paid</td>
+                           <td><span class="status delivred">no Delivre</span></td>
+                       </tr>
+                       <tr>
+                           <td>enas mostafa</td>
+                           <td>$270</td>
+                           <td>Paid</td>
+                           <td><span class="status delivred">Delivred</span></td>
+                       </tr>
+                       <tr>
+                           <td>padr barker</td>
+                           <td>$1000</td>
+                           <td>Paid</td>
+                           <td><span class="status delivred">Delivred</span></td>
+                       </tr>
+                         </tbody>
+                     </table>
+                 </div>
+                  <!--New Customers-->
+                  <div class="recentCustomers">
+                    <div class="oheader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                        <td><h4>David<br><span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                                </tr>
+                                <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                        <td><h4>David<br><span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                                    </tr>
+                                    <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="60px">
+                                            <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                                    <td><h4>David<br><span>Italy</span></h4></td>
+                                        </tr>
+                                        <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="60px">
+                                            <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                                    <td><h4>David<br><span>Italy</span></h4></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="60px">
+                                                <div class="imgBx"><img src="../img/1.jpg" alt=""></div> </td>
+                                        <td><h4>David<br><span>Italy</span></h4></td>
+                                            </tr>
+                                            
+                    </table>
+                  </div>
+             </div>
+             
+        </div>
+    </div>
+    <!--the charts link-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="../js/my-chart.js"></script>
+    <script>
+        let toggle=document.querySelector('.toggle');
+        let main=document.querySelector('.main');
+        let nav=document.querySelector('.nav');
+        toggle.onclick=function(){
+            nav.classList.toggle('shreenk');
+            main.classList.toggle('active');
+        }
+
+        let list=document.querySelectorAll('.nav li');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+      list.forEach((item)=>
+      item.addEventListener('mouseover',activeLink))
+    </script>
+</body>
+</html>

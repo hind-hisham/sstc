@@ -1,0 +1,2 @@
+# sstc
+ my first work

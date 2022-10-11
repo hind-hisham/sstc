@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css"><!--the main css style file-->
+    <link rel="stylesheet" href="../css/font.css">
+
+</head>
+<body>
+   <!-- ===========================start navbare header ================== -->
+
+   <header>
+
+    <a href="#" class="logo"><img src="../img/Logo.png" alt="SSCT"></a>
+
+    <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop"><img src="../img/exit.svg" alt="exit"></li>
+        <li><a href="index.html" data-value="home" id="01">Home</a></li>
+        <li><a href="services.html" data-value="services" id="02">Services</a></li>
+        <li class="active"><a href="courses.html" data-value="courses" id="03">Courses</a></li>
+        <li><a href="about-us.html" id="04">About Us</a></li>
+        <li><a href="contact-us.html" data-value="contact-us" id="05">Contact Us</a></li>
+
+    </ul>
+    <div>
+        <div class="login" id="06"><a href="login.html">logIn </a></div>
+
+        <div class="flag" id="english"><img src="../img/us-flag.png" alt=""></div>
+        <div class="flag" id="arabic"><img src="../img/su-flag.png" alt=""></div>
+        <a href="#" class="hide-desktop menu">
+            <img src="../img/ham-w.png" alt="toggle menu" id="menu">
+        </a>
+    </div>
+</header>
+<!-- ===========================end navbare header ================== -->
+
+     <!-- ===========================start the database form ================== -->
+     <div class="container-big">
+<!-- ===========================start our courses ================== -->
+
+<!-- ===========================end our courses ================== -->
+
+<!-- ===========================start courses table ================== -->
+<div class="dark-laptop"><img src="../img/dark-laptop.png" alt=""></div>
+<h3 class="table-header" id="1-1">Our Courses</h3>
+<div class="cours-table">
+    
+    <table>
+        <tr> <td id="2-1">computer basics</td><td>30<span id="11"> hour</span></td><td>10000 SDG</td><td id="2-2">Leena mutasim</td><td><a href="cours.html">+</a></td></tr>
+        <tr> <td id="3-1">electronic accounting</td><td>30 <span id="12"> hour</span></td><td>12000 SDG</td><td id="3-2">Sediya Mohammed</td><td><a href="#">+</a></td></tr>
+        <tr> <td id="4-1">Computer Maintenance</td><td>30 <span id="13"> hour</span></td><td>10000 SDG</td><td id="4-2">Shawgi Abdelkareem Dawood</td><td><a href="#">+</a></td></tr>
+        <tr> <td id="5-1">Computer network</td><td>30 <span id="14"> hour</span></td><td>12000 SDG</td><td id="5-2">Mohammed siddig</td><td><a href="#">+</a></td></tr>
+        <tr> <td id="6-1">web Design</td><td>30 <span id="15"> hour</span></td><td>12000 SDG</td><td id="6-2">Amane Mohammed</td><td><a href="#">+</a></td></tr>
+        <tr> <td id="7-1">typing skills</td><td>20 <span id="16"> hour</span></td><td>10000 SDG</td><td id="7-2">Mohammed siddig</td><td><a href="#">+</a></td></tr>
+        <tr> <td id="18-1">java</td><td>20 <span id="17"> hour</span></td><td>10000 SDG</td><td id="18-2">Hind Ali</td><td><a href="#">+</a></td></tr>
+        <tr> <td id="9-1">CCTV</td><td>15 <span id="18"> hour</span></td><td>15000 SDG</td><td id="9-2">Shawgi Abdelkareem</td><td><a href="#">+</a></td></tr>
+        <tr> <td id="10-1">C#</td><td>30 <span id="19"> hour</span></td><td>15000 SDG</td><td id="10-2">Shawgi Abdelkareem</td><td><a href="#">+</a></td></tr>
+            </table>
+</div>
+<!-- ===========================end courses table ================== -->
+
+</div><!--end big container-->
+       <!-- ===========================end the database form ================== -->
+      <!-- ===========================Start Footer ================== -->
+    <div>
+        <div class="footer">
+            <ul>
+                <li><a href="https://www.facebook.com/Alshargcenter"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCDvATSd4ZFsonjTL4xnTOfQ"><i class="fa fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="inforamtion">
+
+            <div class="footer-logo hide-mobile">
+                <!--p1-->
+                <img src="../img/12.png">
+            </div>
+            <!--p-1-->
+
+            <div>
+                <!--p2-->
+                <i class="fa fa-map-marker" aria-hidden="true"></i>  <p id="8-1"> Sudan - Algdaref - Alfurat Building </p>
+                <br><i class="fa fa-phone" aria-hidden="true"></i>  <p id="8-2"> 0112993294 - 0903804202</p>
+            </div>
+            <!--p-2-->
+        </div>
+        <!--information-->
+        <p class="lead-footer" ><span id="8-3">All </span> &copy; <span id="8-4">Rights Reserved SSTC</span> </p>
+    </div>
+    <!-- ============================ End Footer==================== -->
+ <script src="../js/language-courses.js"></script>
+ <script>
+      //mobile nav chinges JS
+    var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function (e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+ </script>
+</body>
+</html>
